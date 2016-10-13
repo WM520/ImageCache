@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TableViewCell.h"
 #import "TestModel.h"
+#import "MBProgressHUD.h"
 #define CachedImageFile(url) [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:[url lastPathComponent]]
 
 static NSString *const cellID = @"cellid";
@@ -32,6 +33,7 @@ static NSString *const cellID = @"cellid";
     // Do any additional setup after loading the view, typically from a nib.
     [_maintableview registerNib:[UINib nibWithNibName:@"TableViewCell" bundle:nil] forCellReuseIdentifier:cellID];
     _maintableview.estimatedRowHeight = 100;
+    _maintableview.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self loadData];
 }
 
@@ -40,7 +42,13 @@ static NSString *const cellID = @"cellid";
     NSURLSession *session = [NSURLSession sharedSession];
     NSURL *url = [NSURL URLWithString:@"http://api.youqudao.com/mhapi/api/recommend?customerId=1964843&uuid=ac:f7:f3:48:ec:71&market=6&appversion=21"];
 //    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.maintableview animated:YES];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.labelText = @"正在玩命加载....";
+    hud.color = [UIColor blackColor];
+    hud.progress = 0.5;
     NSURLSessionDataTask *task = [session dataTaskWithRequest:[NSURLRequest requestWithURL:url] completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        [MBProgressHUD hideHUDForView:self.maintableview animated:YES];
          NSDictionary *content = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
         NSArray *arr = content[@"data"][@"sliders"];
         for (int i = 0; i < arr.count; i++) {

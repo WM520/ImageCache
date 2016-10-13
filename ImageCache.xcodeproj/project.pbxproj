@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		81C55FA51DAF5AE2003B4503 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C55FA41DAF5AE2003B4503 /* TestModel.m */; };
+		81C55FA81DAF72BD003B4503 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 81C55FA71DAF72BD003B4503 /* MBProgressHUD.m */; };
 		81D273B01DAF251E0074D342 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D273AF1DAF251E0074D342 /* main.m */; };
 		81D273B31DAF251E0074D342 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D273B21DAF251E0074D342 /* AppDelegate.m */; };
 		81D273B61DAF251E0074D342 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D273B51DAF251E0074D342 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		81C55FA31DAF5AE2003B4503 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		81C55FA41DAF5AE2003B4503 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		81C55FA61DAF72BD003B4503 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		81C55FA71DAF72BD003B4503 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		81D273AB1DAF251E0074D342 /* ImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D273AF1DAF251E0074D342 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81D273B11DAF251E0074D342 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				81D273E21DAF25B40074D342 /* TableViewCell.m */,
 				81D273E31DAF25B40074D342 /* TableViewCell.xib */,
 				81D273B71DAF251E0074D342 /* Main.storyboard */,
+				81C55FA61DAF72BD003B4503 /* MBProgressHUD.h */,
+				81C55FA71DAF72BD003B4503 /* MBProgressHUD.m */,
 				81D273BA1DAF251E0074D342 /* Assets.xcassets */,
 				81D273BC1DAF251E0074D342 /* LaunchScreen.storyboard */,
 				81D273BF1DAF251E0074D342 /* Info.plist */,
@@ -302,6 +307,7 @@
 				81C55FA51DAF5AE2003B4503 /* TestModel.m in Sources */,
 				81D273B01DAF251E0074D342 /* main.m in Sources */,
 				81D273EA1DAF2ACC0074D342 /* WMImageCache.m in Sources */,
+				81C55FA81DAF72BD003B4503 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

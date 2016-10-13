@@ -18,10 +18,10 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BlC-Vk-Po1"/>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="BlC-Vk-Po1" secondAttribute="bottom" id="FYO-AI-xIT"/>
-                    <constraint firstItem="BlC-Vk-Po1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KmB-ne-OSq"/>
-                    <constraint firstAttribute="trailing" secondItem="BlC-Vk-Po1" secondAttribute="trailing" id="L69-go-JqQ"/>
-                    <constraint firstItem="BlC-Vk-Po1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pee-he-FBR"/>
+                    <constraint firstItem="BlC-Vk-Po1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8TY-FD-Dcc"/>
+                    <constraint firstAttribute="trailing" secondItem="BlC-Vk-Po1" secondAttribute="trailing" constant="10" id="O7m-F7-002"/>
+                    <constraint firstItem="BlC-Vk-Po1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="V95-J3-Zfo"/>
+                    <constraint firstAttribute="bottom" secondItem="BlC-Vk-Po1" secondAttribute="bottom" constant="10" id="ZqV-1U-67N"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
